@@ -1,0 +1,49 @@
+.register_button:hover, .update_button:hover, .delete_button:hover, .dashboard_button:hover {
+    -fx-background-color : #4E87DC;
+}
+
+.register_button:focused, .update_button:focused, .delete_button:focused, .dashboard_button:focused {
+    -fx-background-color : #0C387E;
+}
+
+.register_button:pressed, .update_button:pressed, .delete_button:pressed, .dashboard_button:pressed {
+    -fx-background-color : #0C387E;
+}
+
+.register_button, .update_button, .delete_button, .dashboard_button {
+    -fx-background-color : #245DB3;
+}
+
+.closeButton{
+    -fx-background-color : #BE181C;
+    -fx-border-color : #245DB3;
+    -fx-transition-duration: 2.6s;
+}
+.closeButton:hover{
+    -fx-background-color : #F94245;
+}
+.closeButton:pressed{
+    -fx-background-color : #7D0005;
+}
+
+.minimiseButton{
+    -fx-background-color : #0C387E;
+    -fx-border-color : #245DB3;
+}
+.minimiseButton:hover{
+    -fx-background-color : #4E87DC;
+}
+.minimiseButton:pressed{
+    -fx-background-color : #0C387E;
+}
+
+.resizeButton{
+    -fx-background-color : #0C387E;
+    -fx-border-color : #245DB3;
+}
+.resizeButton:hover{
+    -fx-background-color : #4E87DC;
+}
+.resizeButton:pressed{
+    -fx-background-color : #0C387E;
+}

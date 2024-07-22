@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="947.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.stockapp.controller.HelloController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="548.0" prefWidth="947.0">
+         <left>
+            <VBox prefHeight="502.0" prefWidth="182.0" style="-fx-background-color: #245DB3;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="33.0" prefWidth="182.0" styleClass="register_button" stylesheets="@../../../Css/stockApp.css" text="Registration" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Emoji" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/register_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" top="6.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="33.0" prefWidth="182.0" styleClass="update_button" stylesheets="@../../../Css/stockApp.css" text="Update" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Emoji" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/update_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" top="6.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="33.0" prefWidth="182.0" styleClass="delete_button" stylesheets="@../../../Css/stockApp.css" text="Delete" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Emoji" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/delete_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" top="6.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="33.0" prefWidth="182.0" styleClass="dashboard_button" stylesheets="@../../../Css/stockApp.css" text="Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Emoji" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/dashboard_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" top="6.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox fx:id="hbox" onMouseClicked="#anchorPane_clicked" onMouseDragged="#anchorPane_dragged" prefHeight="28.0" prefWidth="947.0" style="-fx-background-color: #0C387E;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#minimiseButton_clicked" prefHeight="0.0" prefWidth="34.0" styleClass="minimiseButton" stylesheets="@../../../Css/stockApp.css">
+                     <HBox.margin>
+                        <Insets left="844.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/minimiser.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="4.0" />
+                     </padding></Button>
+                  <Button mnemonicParsing="false" prefHeight="0.0" prefWidth="34.0" styleClass="resizeButton" stylesheets="@../../../Css/stockApp.css">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/noun-maximize-4826588.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="4.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#closeButton_clicked" prefHeight="0.0" prefWidth="34.0" styleClass="closeButton" stylesheets="@../../../Css/stockApp.css">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/8679951_close_fill_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="4.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <right>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

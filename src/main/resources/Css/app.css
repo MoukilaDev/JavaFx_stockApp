@@ -1,0 +1,15 @@
+.register_button, .update_button, .delete_button, .dashboard_button :hover {
+    -fx-background-color : #4E87DC;
+}
+
+.register_button, .update_button, .delete_button, .dashboard_button :focus {
+    -fx-background-color : #0C387E;
+}
+
+.register_button, .update_button, .delete_button, .dashboard_button :pressed {
+    -fx-background-color : #0C387E;
+}
+
+.register_button, .update_button, .delete_button, .dashboard_button {
+    -fx-background-color : #245DB3;
+}
